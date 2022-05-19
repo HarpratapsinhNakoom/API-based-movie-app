@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Movie Reviews</title>
+</head>
+<body>
+    <div class="navTop">
+        <span class="navTitle">Movie Reviews</span>
+        <form class="navForm">
+            <input type="text" placeholder= "Search . . ."class="navSearch"><i class="fa-solid fa-magnifying-glass icon"></i>
+        </form>
+    </div>
+    <div class="filter">
+        <i class="fa-solid fa-filter filter-icon"></i><span class="filterTitle">FILTERS</span>
+
+        <div class="addedTags">
+            
+        </div>
+        <div class="filterList">
+            <div class="language">
+                Language
+                <hr>
+                <div id="languageList">
+                </div>
+            </div>
+            <div class="genre">
+                Genre<hr>
+                <div id="genreList">
+                </div>
+            </div>
+            <!-- <div class="year">
+                Release Year<hr>
+                <div class="yearList">
+                    <span class="yearItem">Last 5 Years</span>
+                    <span class="yearItem">2010s</span>
+                    <span class="yearItem">2000s</span>
+                    <span class="yearItem">1990s</span>
+                    <span class="yearItem">1900s</span>
+                </div>
+            </div>
+            <div class="adult">
+                Age Restrictions<hr>
+                <div class="adultList">
+                    <span class="adultItem">UA</span>
+                    <span class="adultItem">18+</span>
+                </div>
+            </div>
+            <div class="rating">
+                Rating<hr>
+                <div class="ratingList">
+                    <span class="ratingItem">8-10</span>
+                    <span class="ratingItem">5-8</span>
+                    <span class="ratingItem">0-5</span>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="functionbtns">
+            <button onclick="changeItems()" class="applyFiltersBtn">APPLY FILTERS</button>
+
+            <button onclick="clearItems()" class="clearFiltersBtn">CLEAR FILTERS</button>
+        </div>
+    </div>
+    <div id="movieContent">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
